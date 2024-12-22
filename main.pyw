@@ -95,8 +95,8 @@ def draws():
     zv2 = vset(ks2)
     pygame.draw.rect(window, key_color, (H-width, (1-zv1)*y_zoom*width*0.5           , ((1-x_zoom)+(x_zoom*zv1))*width, ((1-y_zoom)+(y_zoom*zv1))*width), border_radius=5)
     pygame.draw.rect(window, key_color, (H-width, (1-zv2)*y_zoom*width*0.5+width+gap , ((1-x_zoom)+(x_zoom*zv2))*width, ((1-y_zoom)+(y_zoom*zv2))*width), border_radius=5)
-    pygame.draw.rect(d_window,(*green,zv1*255), (H-width+l_width , (1-zv1)*y_zoom*width*0.5+l_width          , ((1-x_zoom)+(x_zoom*zv1))*width-2*l_width , ((1-y_zoom)+(y_zoom*zv1))*width-2*l_width), border_radius=5)
-    pygame.draw.rect(d_window,(*green,zv2*255), (H-width+l_width , (1-zv2)*y_zoom*width*0.5+l_width+width+gap, ((1-x_zoom)+(x_zoom*zv2))*width-2*l_width , ((1-y_zoom)+(y_zoom*zv2))*width-2*l_width), border_radius=5)
+    pygame.draw.rect(d_window,(*green,zv1**2*255), (H-width+l_width , (1-zv1)*y_zoom*width*0.5+l_width          , ((1-x_zoom)+(x_zoom*zv1))*width-2*l_width , ((1-y_zoom)+(y_zoom*zv1))*width-2*l_width), border_radius=5)
+    pygame.draw.rect(d_window,(*green,zv2**2*255), (H-width+l_width , (1-zv2)*y_zoom*width*0.5+l_width+width+gap, ((1-x_zoom)+(x_zoom*zv2))*width-2*l_width , ((1-y_zoom)+(y_zoom*zv2))*width-2*l_width), border_radius=5)
     window.blit(d_window, (0,0))
     
 
